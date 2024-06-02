@@ -2,7 +2,7 @@
 
 Bu proje, COCOMO (Constructive Cost Model) adı verilen bir yazılım maliyet tahmini modelini uygulayan bir hesaplayıcıdır. COCOMO modeli, yazılım geliştirme projelerinin maliyetini, iş gücü gereksinimlerini ve geliştirme süresini tahmin etmek için kullanılır.
 
-<img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/dbbb3ca9-074b-421c-9c24-4b98b281863d" width="650">
+<img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/9ffee935-32da-415d-ac8e-050c75875180" width="650">
 
 ## Nasıl Kullanılır
 
