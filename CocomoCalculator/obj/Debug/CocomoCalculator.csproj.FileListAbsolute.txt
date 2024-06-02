@@ -1,0 +1,13 @@
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\bin\Debug\CocomoCalculator.exe.config
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\bin\Debug\CocomoCalculator.exe
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\bin\Debug\CocomoCalculator.pdb
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.csproj.AssemblyReference.cache
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.Form1.resources
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.Properties.Resources.resources
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.csproj.GenerateResource.cache
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.exe
+C:\Users\Furkan\source\repos\CocomoCalculator\CocomoCalculator\obj\Debug\CocomoCalculator.pdb
+C:\Users\Furkan\Desktop\CocomoCalculator.exe.config
+C:\Users\Furkan\Desktop\CocomoCalculator.exe
+C:\Users\Furkan\Desktop\CocomoCalculator.pdb
