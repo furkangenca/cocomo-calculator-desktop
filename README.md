@@ -2,16 +2,28 @@
 
 Bu proje, COCOMO (Constructive Cost Model) adı verilen bir yazılım maliyet tahmini modelini uygulayan bir hesaplayıcıdır. COCOMO modeli, yazılım geliştirme projelerinin maliyetini, iş gücü gereksinimlerini ve geliştirme süresini tahmin etmek için kullanılır.
 
+<img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/dbbb3ca9-074b-421c-9c24-4b98b281863d" width="650">
+
 ## Nasıl Kullanılır
 
-CocomoCalculator.exe dosyasını indirerek doğrudan kullanabilirsiniz.
+CocomoCalculator.exe dosyasını indirerek doğrudan kullanabilirsiniz. 
+- Ölçüm parametrelerinizi örnek fotoğraftaki gibi belirleyin.
+- Ardından parametrelerinizin önemine göre karşılık olarak ağırlık faktörlerini yazın.
+- Elde ettiğiniz verileri de uygulamamızdaki alanlara istenildiği şekilde yazın.
+- Projenin teknik karmaşıklığını inceleyebilmek için sekiz soruyu cevaplayın.
+- Projenizin boyutuna göre de bir sınıf seçin ve cocomo sonucunuzu hesaplayın.
 
-![image](https://github.com/furkangenca/CocomoCalculator/assets/148720624/dbbb3ca9-074b-421c-9c24-4b98b281863d)
+<p align="center">
+  <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/7be26bf5-235b-4cf7-b261-2ab6665c3290" width="300">
+</p>
 
 
-## Katkıda Bulunma
+**Proje Tipleri:**
 
-Eğer projeye katkıda bulunmak istiyorsanız, lütfen bir çekme isteği gönderin. Her türlü katkı ve öneriye açığız!
+- **Ayrık Projeler:** Küçük boyutlu, deneyimli personel tarafından gerçekleştirilmiş projeler (Örn: LAN üzerinde çalışan insan kaynakları yönetim sistemi)
+- **Yarı Gömülü:** Hem bilgi boyutu hem donanım sürme boyutu olan projeler
+- **Gömülü Projeler:** Donanım sürmeyi hedefleyen projeler (pilotsuz uçağı süren yazılım - donanım kısıtlamaları yüksek)
+
 
 ## Lisans
 
