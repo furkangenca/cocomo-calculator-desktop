@@ -1,30 +1,28 @@
 # CocomoCalculator
 
-Bu proje, COCOMO (Constructive Cost Model) adı verilen bir yazılım maliyet tahmini modelini uygulayan bir hesaplayıcıdır. COCOMO modeli, yazılım geliştirme projelerinin maliyetini, iş gücü gereksinimlerini ve geliştirme süresini tahmin etmek için kullanılır.
+This project is a calculator that implements a software cost estimation model called COCOMO (Constructive Cost Model). The COCOMO model is used to estimate the cost, manpower requirements, and development time of software development projects.
 
 <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/9ffee935-32da-415d-ac8e-050c75875180" width="650">
 
-## Nasıl Kullanılır
+## How to Use
 
-CocomoCalculator.exe dosyasını indirerek doğrudan kullanabilirsiniz. 
-- Ölçüm parametrelerinizi örnek fotoğraftaki gibi belirleyin.
-- Ardından parametrelerinizin önemine göre karşılık olarak ağırlık faktörlerini yazın.
-- Elde ettiğiniz verileri de uygulamamızdaki alanlara istenildiği şekilde yazın.
-- Projenin teknik karmaşıklığını inceleyebilmek için sekiz soruyu cevaplayın.
-- Projenizin boyutuna göre de bir sınıf seçin ve cocomo sonucunuzu hesaplayın.
+You can use it directly by downloading the CocomoCalculator.exe file.
+- Set your measurement parameters as shown in the example photo.
+- Then, enter the corresponding weight factors according to the importance of your parameters.
+- Write the obtained data into the fields in our application as requested.
+- Answer eight questions to examine the technical complexity of your project.
+- Choose a class based on the size of your project and calculate your COCOMO result.
 
 <p align="center">
   <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/7be26bf5-235b-4cf7-b261-2ab6665c3290" width="300">
 </p>
 
+**Project Types:**
 
-**Proje Tipleri:**
+- **Organic Projects:** Small-scale projects conducted by experienced staff (e.g., a human resources management system running on a LAN)
+- **Semi-Detached:** Projects that have both an informational and hardware-driving component.
+- **Embedded Projects:** Projects aimed at driving hardware (e.g., software controlling an unmanned aircraft - high hardware constraints)
 
-- **Ayrık Projeler:** Küçük boyutlu, deneyimli personel tarafından gerçekleştirilmiş projeler (Örn: LAN üzerinde çalışan insan kaynakları yönetim sistemi)
-- **Yarı Gömülü:** Hem bilgi boyutu hem donanım sürme boyutu olan projeler
-- **Gömülü Projeler:** Donanım sürmeyi hedefleyen projeler (pilotsuz uçağı süren yazılım - donanım kısıtlamaları yüksek)
+## License
 
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
+This project is licensed under the MIT License. For more details, see the LICENSE file.
