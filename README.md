@@ -1,28 +1,73 @@
-# CocomoCalculator
+# 🧮 COCOMO Calculator (Windows Desktop App)
 
-This project is a calculator that implements a software cost estimation model called COCOMO (Constructive Cost Model). The COCOMO model is used to estimate the cost, manpower requirements, and development time of software development projects.
+This project is a Windows desktop application built to implement the **COCOMO (Constructive Cost Model)** — a well-known algorithmic model used to estimate **cost**, **manpower**, and **development time** for software projects.
 
-<img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/9ffee935-32da-415d-ac8e-050c75875180" width="650">
+> ✅ Includes executable `.exe` file for direct use  
+> 🛠️ Developed with Visual Studio (.NET)
 
-## How to Use
+---
 
-You can use it directly by downloading the CocomoCalculator.exe file.
-- Set your measurement parameters as shown in the example photo.
-- Then, enter the corresponding weight factors according to the importance of your parameters.
-- Write the obtained data into the fields in our application as requested.
-- Answer eight questions to examine the technical complexity of your project.
-- Choose a class based on the size of your project and calculate your COCOMO result.
+## 🖼️ Application Preview
 
 <p align="center">
-  <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/7be26bf5-235b-4cf7-b261-2ab6665c3290" width="300">
+  <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/9ffee935-32da-415d-ac8e-050c75875180" width="650">
 </p>
 
-**Project Types:**
+---
 
-- **Organic Projects:** Small-scale projects conducted by experienced staff (e.g., a human resources management system running on a LAN)
-- **Semi-Detached:** Projects that have both an informational and hardware-driving component.
-- **Embedded Projects:** Projects aimed at driving hardware (e.g., software controlling an unmanned aircraft - high hardware constraints)
+## ⚙️ How It Works
 
-## License
+The COCOMO model uses software project parameters to estimate development effort.  
+The process consists of **three simple steps**:
 
-This project is licensed under the MIT License. For more details, see the LICENSE file.
+---
+
+### 📌 Step 1: Enter Measurement Parameters
+
+You will need to count elements of your project such as inputs, outputs, and queries, and multiply them by their weight factors.
+
+| Measurement Parameter       | Count | Weight Factor |
+|-----------------------------|--------|----------------|
+| User Inputs                 | 10     | 3              |
+| User Outputs                | 15     | 4              |
+| User Inquiries              | 5      | 3              |
+| Internal Logical Files      | 2      | 7              |
+| External Interface Files    | 1      | 5              |
+
+> Multiply and sum all rows to compute your **Function Point count**.
+
+---
+
+### 🧠 Step 2: Answer Technical Complexity Questions
+
+There are 8 yes/no questions assessing aspects like performance requirements, data communication, and system configuration. Each answer affects your **effort adjustment factor**.
+
+---
+
+### 🗂️ Step 3: Select Project Class
+
+Choose one of the following based on the nature of your software:
+
+- **Organic** – Small, familiar systems developed in a stable environment  
+- **Semi-Detached** – Medium complexity, partially familiar teams  
+- **Embedded** – Complex systems with tight hardware/software constraints
+
+The tool will then calculate:
+
+- **Estimated Effort (person-months)**
+- **Development Time (months)**
+- **Required Team Size**
+
+---
+
+## 🚀 How to Run
+
+1. Download the latest release from the repository (`CocomoCalculator.exe`)
+2. Double-click to launch the application
+3. Fill in the required fields and calculate results instantly
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
