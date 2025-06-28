@@ -1,9 +1,9 @@
 # 🧮 COCOMO Calculator (Windows Desktop App)
 
-This project is a Windows desktop application built to implement the **COCOMO (Constructive Cost Model)** — a well-known algorithmic model used to estimate **cost**, **manpower**, and **development time** for software projects.
+**COCOMO Calculator** is a Windows desktop application built with **C# (.NET Framework)** to implement the **COCOMO (Constructive Cost Model)** — a well-known algorithmic model used to estimate **cost**, **effort**, and **development time** for software projects.
 
-> ✅ Includes executable `.exe` file for direct use  
-> 🛠️ Developed with Visual Studio (.NET)
+> 🛠️ Developed using **WinForms** in Visual Studio  
+> 📦 Download the executable from the [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases) section.
 
 ---
 
@@ -17,54 +17,39 @@ This project is a Windows desktop application built to implement the **COCOMO (C
 
 ## ⚙️ How It Works
 
-The COCOMO model uses software project parameters to estimate development effort.  
-The process consists of **three simple steps**:
+The application estimates software development parameters in **three steps** using the COCOMO model:
 
----
+### 1️⃣ Enter Measurement Parameters
 
-### 📌 Step 1: Enter Measurement Parameters
+Specify counts for inputs, outputs, files, and interfaces. Each is multiplied by its respective weight factor to compute a **Function Point** count.
 
-You will need to count elements of your project such as inputs, outputs, and queries, and multiply them by their weight factors.
+### 2️⃣ Answer Complexity Questions
 
-| Measurement Parameter       | Count | Weight Factor |
-|-----------------------------|--------|----------------|
-| User Inputs                 | 10     | 3              |
-| User Outputs                | 15     | 4              |
-| User Inquiries              | 5      | 3              |
-| Internal Logical Files      | 2      | 7              |
-| External Interface Files    | 1      | 5              |
+Eight yes/no technical complexity questions determine the **effort adjustment factor**.
 
-> Multiply and sum all rows to compute your **Function Point count**.
+### 3️⃣ Select Project Type
 
----
+Choose one of the three COCOMO project types:
 
-### 🧠 Step 2: Answer Technical Complexity Questions
+- **Organic** — Small, simple systems  
+- **Semi-Detached** — Intermediate complexity  
+- **Embedded** — Large, tightly constrained systems
 
-There are 8 yes/no questions assessing aspects like performance requirements, data communication, and system configuration. Each answer affects your **effort adjustment factor**.
+The app will then calculate:
 
----
-
-### 🗂️ Step 3: Select Project Class
-
-Choose one of the following based on the nature of your software:
-
-- **Organic** – Small, familiar systems developed in a stable environment  
-- **Semi-Detached** – Medium complexity, partially familiar teams  
-- **Embedded** – Complex systems with tight hardware/software constraints
-
-The tool will then calculate:
-
-- **Estimated Effort (person-months)**
-- **Development Time (months)**
-- **Required Team Size**
+- 🧠 Estimated Effort (person-months)  
+- 🕒 Development Time (months)  
+- 👥 Recommended Team Size
 
 ---
 
 ## 🚀 How to Run
 
-1. Download the latest release from the repository (`CocomoCalculator.exe`)
-2. Double-click to launch the application
-3. Fill in the required fields and calculate results instantly
+1. Go to the [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases) section
+2. Download the latest `.exe` file
+3. Double-click to launch — no installation required
+
+> 💡 This is a standalone Windows application. No setup or dependencies needed.
 
 ---
 
