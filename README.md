@@ -1,55 +1,148 @@
-# 🧮 COCOMO Calculator (Windows Desktop App)
+# 🧮 Function Point + COCOMO Calculator (Windows Desktop App)
 
-**COCOMO Calculator** is a Windows desktop application built with **C# (.NET Framework)** to implement the **COCOMO (Constructive Cost Model)** — a well-known algorithmic model used to estimate **cost**, **effort**, and **development time** for software projects.
+**COCOMO Calculator** is a Windows desktop application that estimates software development **effort**, **duration**, and **team size** by combining two models:
 
-> 🛠️ Developed using **WinForms** in Visual Studio  
-> 📦 Download the executable from the [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases) section.
+- **Function Point Analysis (IN)**
+- **COCOMO Basic Model**
+
+Developed in **C# (.NET Framework)** using Windows Forms.
+
+> 📦 Download the `.exe` directly from the [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases) page.  
+> ⚙️ No installation required. Runs as a standalone Windows application.
+
+
 
 ---
 
-## 🖼️ Application Preview
+## 🧠 How It Works
+
+The app follows a 3-stage estimation flow:
+
+### 1️⃣ Function Point Calculation (IN)
+
+You provide:
+- A list of **measurement counts** (e.g. number of inputs, outputs, interfaces…)
+- A matching list of **weight factors** for each
+
+The app computes **AIN (Unadjusted Function Points)** using:
+
+```
+AIN = ∑ (Measurement[i] × Weight[i])
+```
+
+Then it evaluates 8 complexity-related factors (0–5 scale):
+
+> e.g. *Does the app require backup/recovery?*  
+> *Are there distributed operations?*  
+> *Is performance critical?* etc.
+
+These are summed as the **Technical Complexity Factor (TKF)**, and IN is calculated as:
+
+```
+IN = AIN × (0.65 + 0.01 × TKF)
+```
+
+### 2️⃣ Source Code Size Estimation
+
+Estimated **Lines of Code (LOC)** are calculated based on:
+
+```
+LOC = IN × 30  
+KLOC = LOC / 1000
+```
+
+(Assumes average 30 LOC per Function Point)
+
+### 3️⃣ COCOMO Estimation
+
+Based on selected **project type**, the app applies COCOMO's basic model:
+
+| Type | Input Code | Description        |
+|------|------------|--------------------|
+| 1    | Organic     | Simple, small project with experienced team |
+| 2    | Semi-Detached | Medium-size, mixed-experience |
+| 3    | Embedded    | Complex, constrained system |
+
+COCOMO Formulas:
+
+```
+Effort (K) = a × (KLOC)^b  
+Time   (T) = c × (K)^d  
+Avg. Team Size = Effort / Time
+```
+
+Constants (a, b, c, d) vary based on project type.
+
+---
+
+## 🖼️ App Preview
 
 <p align="center">
   <img src="https://github.com/furkangenca/CocomoCalculator/assets/148720624/9ffee935-32da-415d-ac8e-050c75875180" width="650">
 </p>
 
----
 
-## ⚙️ How It Works
+### 📤 Output Preview
 
-The application estimates software development parameters in **three steps** using the COCOMO model:
+Once you enter the inputs and hit the **"Cocomo Sonucunu Hesapla"** button, the application displays all calculated results:
 
-### 1️⃣ Enter Measurement Parameters
+- AIN (Unadjusted Function Points)
+- TKF (Technical Complexity Score)
+- IN (Adjusted Function Points)
+- Estimated LOC
+- KLOC
 
-Specify counts for inputs, outputs, files, and interfaces. Each is multiplied by its respective weight factor to compute a **Function Point** count.
+Example output:
 
-### 2️⃣ Answer Complexity Questions
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3084514-10d5-407a-a0a3-c82c7fb9f39d" width="650">
+</p>
 
-Eight yes/no technical complexity questions determine the **effort adjustment factor**.
+## ✅ Sample Input Format
 
-### 3️⃣ Select Project Type
+Measurement Parameters (space-separated):  
+```
+3 5 2 1 0
+```
 
-Choose one of the three COCOMO project types:
+Weight Factors (space-separated):  
+```
+3 4 3 7 5
+```
 
-- **Organic** — Small, simple systems  
-- **Semi-Detached** — Intermediate complexity  
-- **Embedded** — Large, tightly constrained systems
+Technical Questions (each from 0 to 5):  
+```
+1. Does it require backup/recovery?  
+2. Is communication needed?  
+3. Are operations distributed?  
+4. Is performance critical?  
+... (total of 8 questions)
+```
 
-The app will then calculate:
-
-- 🧠 Estimated Effort (person-months)  
-- 🕒 Development Time (months)  
-- 👥 Recommended Team Size
+Project Type:  
+```
+1 → Organic  
+2 → Semi-Detached  
+3 → Embedded
+```
 
 ---
 
 ## 🚀 How to Run
 
-1. Go to the [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases) section
-2. Download the latest `.exe` file
-3. Double-click to launch — no installation required
+1. Download `.exe` from [Releases](https://github.com/furkangenca/cocomo-calculator-desktop/releases)
+2. Double-click and run — no installation or extra setup required
 
-> 💡 This is a standalone Windows application. No setup or dependencies needed.
+> ⚠️ Windows only. Requires .NET Framework (already present on most systems)
+
+---
+
+## 🛠️ Tech Stack
+
+- Language: C#
+- Framework: .NET Framework (WinForms)
+- IDE: Visual Studio
+- No external dependencies
 
 ---
 
