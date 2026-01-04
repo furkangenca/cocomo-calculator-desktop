@@ -57,14 +57,6 @@ The application follows a three-stage estimation workflow:
 
 ---
 
-## What I Learned
-- Applying software estimation models in practice
-- Translating theoretical engineering concepts into usable tools
-- Designing desktop applications with deterministic calculation logic
-- Structuring applications for clarity and maintainability
-
----
-
 ## Setup
 1. Download the executable from the Releases page
 2. Run the `.exe` file (no installation required)
